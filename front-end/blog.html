@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курлат Вадим 21ПИ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/blog.js"></script>
+</head>
+<body>
+    <header>
+       
+    </header>
+    <main>
+        <section id="top">
+            <img src="img/02.jpg" alt="Обложка страницы" class="top-image top-image-sub">
+        </section>
+        <article class="blog-article">
+            <div class="blog-container">
+                <section class="blog-card">
+                    <div class="blog-header">
+                        <div class="blog-cover">
+
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-title">
+                            <h2>Третий</h2>
+                        </div>
+                        <div class="blog-text">
+                            <p>Вкусна</p>
+                        </div>
+                        <div class="blog-tags">
+                            <ul>
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">proident</a></li>
+                                <li><a href="#">amet</a></li>
+                                <li><a href="#">laborum</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="blog-published-date">
+                                2 дня назад
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="blog-card">
+                    <div class="blog-header">
+                        <div class="blog-cover">
+
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-title">
+                            <h2>Второй</h2>
+                        </div>
+                        <div class="blog-text">
+                            <p>текста мало в голове</p>
+                        </div>
+                        <div class="blog-tags">
+                            <ul>
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">proident</a></li>
+                                <li><a href="#">amet</a></li>
+                                <li><a href="#">laborum</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="blog-published-date">
+                                3 дня назад
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="blog-card">
+                    <div class="blog-header">
+                        <div class="blog-cover">
+
+                        </div>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-title">
+                            <h2>Первый</h2>
+                        </div>
+                        <div class="blog-text">
+                            <p>текста мало на странице</p>
+                        </div>
+                        <div class="blog-tags">
+                            <ul>
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">proident</a></li>
+                                <li><a href="#">amet</a></li>
+                                <li><a href="#">laborum</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="blog-published-date">
+                                4 дня назад
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="blog-aside">
+                <div class="aside-search">
+                    <h3 class="search-title">Поиск в блоге</h3>
+                    <div class="search-delimiter"></div>
+                    <input type="search" name="search-text" value="" placeholder="Введите слово" class="search-text">
+                    <input type="submit" name="search-do" value="Искать" class="search-do">
+                </div>
+                <div class="aside-recent">
+                    <h3 class="search-title">Популярные статьи</h3>
+                    <div class="search-delimiter"></div>
+                    <div class="recent-item">
+                        <p>Ut enim ad minim veniam</p>
+                        <span>15/10/2022</span>
+                    </div>
+                    <div class="recent-item">
+                        <p>Excalibur mains</p>
+                        <span>08/09/2022</span>
+                    </div>
+                    <div class="recent-item">
+                        <p>Limbo is OP</p>
+                        <span>29/08/2022</span>
+                    </div>
+                </div> 
+            </aside>
+        </article>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        fetch('navtemp')
+        .then(response => response.text())
+        .then(data => {
+        let headers=document.querySelector("header");
+        headers.innerHTML=data;});
+        fetch('footemp')
+        .then(response => response.text())
+        .then(data => {
+        let footers=document.querySelector("footer");
+        footers.innerHTML=data;});
+    </script>
+</body>
+</html> 
