@@ -1,0 +1,79 @@
+{
+    "li":[
+    {
+        "href":"/",
+        "title":"#services",
+        "text":"Главная"
+    },
+    {
+        "href":"#services",
+        "title":"Общая информация",
+        "text":"Общее"
+    },
+    {
+        "href":"/gallery",
+        "title":"Фотогалерея",
+        "text":"Галерея"
+    },
+    {
+        "href":"/contacts",
+        "title":"Контактная информация",
+        "text":"Контакты"
+    },
+    {
+        "href":"/blog",
+        "title":"Блог",
+        "text":"Блог"
+    },
+    {
+        "href":"/shop",
+        "title":"На главную",
+        "text":"Магазин"
+    }
+],
+"social":[
+    {
+        "alt":"Facebook",
+        "img":"img/social/001-facebook.png"
+    },
+    {
+        "alt":"LinkedIn",
+        "img":"img/social/004-linkedin.png"
+    },
+    {
+        "alt":"Instagram",
+        "img":"img/social/005-instagram.png"
+    },
+    {
+        "alt":"Twitter",
+        "img":"img/social/007-twitter.png"
+    },
+    {
+
+        "alt":"Tumbllr",
+        "img":"img/social/010-tumblr.png"
+    }
+],
+"achievement_row":[
+    {
+        "id":"secondo1",
+        "num":"1250",
+        "text":"ежемесечные туры"
+    },
+    {
+        "id":"secondo2",
+        "num":"350",
+        "text":"мест"
+    },
+    {
+        "id":"secondo3",
+        "num":"2500",
+        "text":"Довольных клиентов"
+    },
+    {
+        "id":"secondo4",
+        "num":"250",
+        "text":"Новых позиций"
+    }
+]
+}
