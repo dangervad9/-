@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-       {{> header}}
+       
     </header>
     <main>
         <section id="top">
@@ -136,8 +136,19 @@
         </article>
     </main>
     <footer>
-        {{> footer}} 
+        
     </footer>
-   
+    <script>
+        fetch('navtemp')
+        .then(response => response.text())
+        .then(data => {
+        let headers=document.querySelector("header");
+        headers.innerHTML=data;});
+        fetch('footemp')
+        .then(response => response.text())
+        .then(data => {
+        let footers=document.querySelector("footer");
+        footers.innerHTML=data;});
+    </script>
 </body>
 </html> 
